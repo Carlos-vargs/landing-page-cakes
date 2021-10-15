@@ -22,7 +22,7 @@ export default function Section2() {
                 bgPosition='top'
                 bgSize={['auto', 'auto', 'auto', 'cover', 'cover']}
                 justifyContent={['center', 'center', 'center', 'end', 'end']}
-                pr={['0px', '0px', '0px', '152px', '152px']}
+                paddingInlineEnd={['0px', '0px', '0px', '152px', '152px']}
                 id="about"
             >
                 <Center>

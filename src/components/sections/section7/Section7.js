@@ -40,7 +40,7 @@ export default function Section7() {
                         all the staff are highly trained and there
                         is no dessert that is not excellent.
                     </Text>
-                    <Text as="time" display="block" mt="20px" textAlign="center" datetime="14-10-2021" color="#696969" fontSize="14px" mx="auto"><i>14-October-2021</i></Text>
+                    <Text as="time" display="block" mt="20px" textAlign="center" dateTime="14-10-2021" color="#696969" fontSize="14px" mx="auto"><i>14-October-2021</i></Text>
                     <Flex color="black" w="100px" gridGap="4px" mx="auto" mt="20px">
                         <StarIcon />
                         <StarIcon />
