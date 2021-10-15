@@ -21,7 +21,7 @@ export default function Section2() {
                 bgAttachment="fixed"
                 bgPosition='top'
                 bgSize={['auto', 'auto', 'auto', 'cover', 'cover']}
-                justifyContent={['center', 'center', 'center', 'end', 'end']}
+                justifyContent={['center', 'center', 'center', 'flex-end', 'flex-end']}
                 paddingInlineEnd={['0px', '0px', '0px', '152px', '152px']}
                 id="about"
             >
