@@ -4,12 +4,23 @@ import bgImageSection1 from '../../../resources/images/bgImageIce.jpg'
 import Btn from '../../Btn';
 
 export default function Section1() {
-
+    
     const fontsFamilies = ["'Pangolin', cursive", "sans-serif", 'Roboto']
+
 
     return (
         <Fragment>
-            <Flex position="relative" bgImg={`url(${bgImageSection1})`} color="white" w="full" h="740px" bgAttachment="fixed" bgPosition={['top', 'top', 'top', 'center', 'center']} bgSize={['auto', 'auto', 'auto', 'cover', 'cover']} id="home">
+            <Flex
+                position="relative"
+                bgImg={`url(${bgImageSection1})`}
+                color="white"
+                w="full"
+                h="740px"
+                bgAttachment="fixed"
+                bgPosition={['top', 'top', 'top', 'center', 'center']}
+                bgSize={['auto', 'auto', 'auto', 'cover', 'cover']}
+                id="home"
+            >
                 <Stack
                     justifyContent="center"
                     mx='auto'
