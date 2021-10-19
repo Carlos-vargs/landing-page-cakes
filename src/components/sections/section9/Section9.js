@@ -42,6 +42,7 @@ export default function Section9() {
                 color="white"
                 w="full"
                 h="740px"
+                className="smt"
                 bgAttachment="fixed"
                 bgPosition={['top', 'top', 'top', 'center', 'center']}
                 bgSize='cover'

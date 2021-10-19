@@ -32,6 +32,7 @@ export default function Section3() {
                 position="relative"
                 bgImg={`url(${bgImageSection3})`}
                 color="white" w="full"
+                className="smt"
                 h={['1300px', '1330px', '1300px', '740px', '740px']}
                 bgAttachment="fixed"
                 bgPosition={['center', 'center', 'center', 'inherit', 'inherit']}

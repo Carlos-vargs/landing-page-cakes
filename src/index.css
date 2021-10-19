@@ -15,3 +15,7 @@ code {
 html{
   scroll-behavior: smooth;
 }
+
+.smt{
+  scroll-margin-block-start: 90px !important;
+}

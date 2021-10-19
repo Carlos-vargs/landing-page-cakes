@@ -17,6 +17,7 @@ export default function Section2() {
                 bgImg={`url(${bgImageSection2})`}
                 color="white"
                 w="full"
+                className="smt"
                 h={['900px', '900px', '900px', '586px', '586px']}
                 bgAttachment="fixed"
                 bgPosition='top'

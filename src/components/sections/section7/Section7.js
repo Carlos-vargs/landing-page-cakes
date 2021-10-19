@@ -21,6 +21,7 @@ export default function Section7() {
                 bgPosition={['top', 'top', 'top', 'center', 'center']}
                 bgSize='cover'
                 id="reviews"
+                className="smt"
             >
                 <Box
                     borderRadius="2xl"

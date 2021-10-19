@@ -19,6 +19,7 @@ export default function Section8() {
                 w="full"
                 h="740px"
                 bgAttachment="fixed"
+                className="smt"
                 bgPosition={['top', 'top', 'top', 'inherit', 'inherit']}
                 bgSize={['cover', 'cover', 'cover', 'inherit', 'inherit']}
                 id="orderNow"

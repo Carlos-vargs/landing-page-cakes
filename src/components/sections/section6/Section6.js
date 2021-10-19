@@ -43,6 +43,7 @@ export default function Section6() {
                 bgPosition={['top', 'top', 'top', 'inherit', 'inherit']}
                 bgSize={['auto', 'auto', 'auto', 'cover', 'cover']}
                 id="pricing"
+                className="smt"
             >
                 <Stack alignItems="center" ml='auto' mr={['auto', 'auto', 'auto', '116px', '116px']} mt="60px">
                     <Text as="h3" fontSize="3rem" color="white" fontFamily={fontsFamilies[0]}>Event Pricing</Text>

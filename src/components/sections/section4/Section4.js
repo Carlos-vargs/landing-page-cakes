@@ -48,6 +48,7 @@ export default function Section4() {
                 bgImg={`url(${bgImageSection4})`}
                 color="white"
                 h="740px"
+                className="smt"
                 w="full"
                 justifyContent={['center', 'center', 'center', 'flex-end', 'flex-end']}
                 bgAttachment="fixed"
