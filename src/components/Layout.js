@@ -5,7 +5,7 @@ import Header from './Header';
 
 export default function Layout({ children }) {
 
-    const copyRight = `© 2021. carlosvargs.Make With Love by.`
+    const copyRight = `© 2021. carlosvargs.Made With Love by.`
     const dev = 'Carlos Vargas'
 
     const socialNetworks = [
