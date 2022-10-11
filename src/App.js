@@ -10,11 +10,12 @@ import Section6 from './components/sections/section6/Section6';
 import Section7 from './components/sections/section7/Section7';
 import Section8 from './components/sections/section8/Section8';
 import Section9 from './components/sections/section9/Section9';
+import theme from './theme'
 
 export default function App() {
 
 	return (
-		<ChakraProvider>
+		<ChakraProvider resetCSS theme={theme} >
 			<Layout>
 				<Section1 />
 				<Section2 />
