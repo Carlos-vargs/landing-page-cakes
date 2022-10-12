@@ -1,8 +1,16 @@
 const colors = {
-    base: "#071838",
-    base_ligth: "#142442",
-    base_pink: "#ff0076",
-    base_gradient: "linear-gradient(45deg,#590f87 0,#ff0076 50%,#590f87 100%)"
-}
+  charlestonGreen: {
+    50: "#6F6F6F",
+    300: "#5E5E5E",
+    600: "#4D4D4D",
+    900: "#2B2B2B",
+  },
+  candyPink: {
+    50: "#967E7E",
+    300: "#AC7B7B",
+    600: "#C37979",
+    900: "#EF7474",
+  },
+};
 
-export default colors
+export default colors;

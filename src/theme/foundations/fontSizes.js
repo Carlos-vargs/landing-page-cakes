@@ -1,5 +1,5 @@
 const fontSizes = {
-    body: "16px",
-}
+  body: "16px",
+};
 
-export default fontSizes
+export default fontSizes;
