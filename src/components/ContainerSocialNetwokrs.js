@@ -1,14 +1,26 @@
-import React, { Fragment } from 'react';
-import parse from 'html-react-parser';
-import { Link } from '@chakra-ui/layout';
+import React from "react";
+import { Link } from "@chakra-ui/react";
+import socialNetworks from "../SocialNetworkData";
 
-
-export default function ContainerSocialNetworks({e}) {
-    return (
-        <Fragment>
-            <Link href={e.url} pl={e.pl} textColor="white" pt={e.pt} isExternal display="flex" w="20px" h="20px" title={e.socialNetwork}>
-                {parse(e.iconSvg)}
-            </Link>
-        </Fragment>
-    );
+export default function ContainerSocialNetworks() {
+  return (
+    <>
+      {socialNetworks.map((socialNetwork, key) => (
+        <Link
+          key={key}
+          href={socialNetwork?.url}
+          paddingInline={socialNetwork?.pl}
+          textColor="white"
+          paddingBlockStart={socialNetwork?.pt}
+          isExternal
+          display="flex"
+          width="20px"
+          height="20px"
+          title={socialNetwork?.name}
+        >
+          {socialNetwork?.icon}
+        </Link>
+      ))}
+    </>
+  );
 }

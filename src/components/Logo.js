@@ -1,18 +1,17 @@
-import { Image } from '@chakra-ui/image';
-import { Box } from '@chakra-ui/layout';
-import React from 'react';
-import logoWithWhiteLetters from '../resources/images/newlogo2.png'
-import logoWithBlackLetters from '../resources/images/newlogo3.png'
+import { Image } from "@chakra-ui/image";
+import { Box } from "@chakra-ui/react";
+import React from "react";
+import logoWithWhiteLetters from "../resources/images/newlogo2.png";
+import logoWithBlackLetters from "../resources/images/newlogo3.png";
 
-export default function Logo({ sizeW, sizeH, colorWhite }) {
-    return (
-        <Box objectFit="cover" >
-            {
-                colorWhite
-                    ? <Image src={logoWithBlackLetters} w={sizeW} h={sizeH} />
-                    : <Image src={logoWithWhiteLetters} w={sizeW} h={sizeH} />
-
-            }
-        </Box>
-    );
+export default function Logo({ width, height, variant = "black", ...rest }) {
+  return (
+    <Box as="figure" objectFit="cover" {...rest}>
+      {variant === "white" ? (
+        <Image src={logoWithBlackLetters} width={width} height={height} />
+      ) : (
+        <Image src={logoWithWhiteLetters} width={width} height={height} />
+      )}
+    </Box>
+  );
 }
