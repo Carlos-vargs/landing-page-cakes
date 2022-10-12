@@ -1,40 +1,41 @@
 import React from "react";
-import { Flex, Stack, Text, Heading } from "@chakra-ui/layout";
-import bgImageSection1 from "../../../resources/images/bgImageIce.jpg";
-import { Button } from "@chakra-ui/react";
+import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import bgImageSection1 from "../resources/images/bgImageIce.jpg";
 
-export default function Section1() {
+export default function Section5() {
   return (
     <Flex
+      className="smt"
+      as="section"
       position="relative"
       backgroundImage={`url(${bgImageSection1})`}
       color="white"
       width="full"
       height="740px"
-      backgroundAttachment="fixed"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
-      id="home"
+      id="gallery"
+      paddingInline={["16px", "16px", "16px", "116px", "116px"]}
     >
       <Stack
         justifyContent="center"
         marginInline="auto"
         alignItems={["center", "center", "center", "flex-start", "flex-start"]}
-        textAlign={["center", "center", "left", "left", "left"]}
-        paddingInline={[null, null, "60px", "128px", "128px"]}
-        width={["300px", "300px", "400px", "100%", "100%"]}
-        marginBlockStart={["0px", "0px", "0px", "-100px", "-100px"]}
+        textAlign={["center", "center", "center", "left", "left"]}
+        direction="column"
+        width={["300px", "300px", "400px", "full", "full"]}
       >
         <Heading
           as="h3"
+          color="charlestonGreen.900"
           fontSize={["3rem", "3rem", "4rem", "5rem", "5rem"]}
           lineHeight="1.2em"
-          zIndex="3"
+          zIndex="2"
         >
-          Ice Cream <br /> Cakes
+          Innovation through <br /> Designs.
         </Heading>
         <Text
-          fontSize="16px"
+          color="charlestonGreen.900"
           lineHeight="30px"
           letterSpacing="0.2px"
           marginBlockEnd="36px !important"
@@ -43,7 +44,18 @@ export default function Section1() {
           industry <br />
           with dummmy text. Graphics, Designing, Branding, Development
         </Text>
-        <Button variant="outline">Learn More</Button>
+        <Button
+          variant="outline"
+          color="charlestonGreen.900"
+          borderColor="charlestonGreen.900"
+          textTransform="uppercase"
+          _hover={{
+            backgroundColor: "charlestonGreen.900",
+            color: "white",
+          }}
+        >
+          launch project
+        </Button>
       </Stack>
     </Flex>
   );
