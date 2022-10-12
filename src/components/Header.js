@@ -14,7 +14,7 @@ const nav = [
   { title: "order now", url: "#orderNow" },
 ];
 
-export default function Header({ copyRight, dev, socialNetworks }) {
+export default function Header({ data }) {
   return (
     <Flex
       justifyContent="space-between"
@@ -29,13 +29,8 @@ export default function Header({ copyRight, dev, socialNetworks }) {
       paddingInline={["20px", "20px", "30px", "46px", "46px"]}
     >
       <Logo width={"116px"} height={"66px"} />
-      <Navigation data={nav} />
-      <NavigationMobile
-        data={nav}
-        copyRight={copyRight}
-        dev={dev}
-        socialNetworks={socialNetworks}
-      />
+      <Navigation nav={nav} />
+      <NavigationMobile nav={nav} data={data} />
       <Box
         as="figure"
         bgRepeat="repeat-x"
