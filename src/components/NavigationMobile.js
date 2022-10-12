@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 import { Flex, Link, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
-import ContainerSocialNetwors from "./ContainerSocialNetwokrs";
+import ContainerSocialNetworks from "./ContainerSocialNetwokrs";
 import MenuIcon from "../resources/icons/MenuIcon";
 import "../styles/navHeader.css";
 import "animate.css";
 
-export default function NavigationMobile({
-  data,
-  socialNetworks,
-  dev,
-  copyRight,
-}) {
+export default function NavigationMobile({ nav, data }) {
   const [isOpen, setIsOpen] = useState(false);
   const [sizeTop, setSizeTop] = useState(90);
 
@@ -34,7 +29,7 @@ export default function NavigationMobile({
           isOpen ? "animate__fadeInUpBig" : "animate__fadeOutDownBig"
         }`}
         width="full"
-        paddingBlockStart={["26%", "26%", "20%", null, null]}
+        paddingBlockStart={["26%", "26%", "20%", "0", "0"]}
         backgroundColor="candyPink.900"
         zIndex="3"
         left="0"
@@ -54,7 +49,7 @@ export default function NavigationMobile({
           textTransform="capitalize"
         >
           <UnorderedList listStyleType="none" marginInline="0">
-            {data.map((element, key) => (
+            {nav.map((element, key) => (
               <ListItem
                 key={key}
                 paddingInline="20px"
@@ -81,9 +76,7 @@ export default function NavigationMobile({
           gridGap="14px"
           marginBlockStart="24px !important"
         >
-          {socialNetworks.map((socialNetwork, key) => (
-            <ContainerSocialNetwors key={key} socialNetwork={socialNetwork} />
-          ))}
+          <ContainerSocialNetworks />
         </Flex>
         <Flex
           fontSize="13px"
@@ -92,8 +85,8 @@ export default function NavigationMobile({
           justifyContent="center"
           whiteSpace="pre-wrap"
         >
-          {copyRight} <br />
-          {dev}
+          {data.copyRight} <br />
+          {data.dev}
         </Flex>
       </Stack>
     </Flex>
