@@ -1,11 +1,10 @@
 import { Link, Flex, UnorderedList, ListItem } from "@chakra-ui/react";
 import React from "react";
 
-export default function Navigation({ nav }) {
+export default function DesktopNavigation({ navigation }) {
   return (
     <Flex
       as="nav"
-      display={["none", "none", "none", "flex", "flex"]}
       alignItems="center"
       justifyContent="center"
       fontFamily="heading"
@@ -14,7 +13,7 @@ export default function Navigation({ nav }) {
       textTransform="capitalize"
     >
       <UnorderedList listStyleType="none" display="inline-flex">
-        {nav.map((element, key) => (
+        {navigation.map((element, key) => (
           <ListItem
             key={key}
             color="charlestonGreen.900"
