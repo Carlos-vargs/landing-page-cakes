@@ -2,7 +2,7 @@ import React from "react";
 import { Flex, Stack } from "@chakra-ui/react";
 import bgImageSection2 from "../resources/images/bgImageIce2.jpg";
 import CardServices from "./ServiceCard";
-import { CakeIcon } from "@heroicons/react/outline";
+import CakeIcon from "../resources/icons/CakeIcon";
 import GloveIcon from "../resources/icons/GloveIcon";
 import IceCreamIcon from "../resources/icons/IceCreamIcon";
 
