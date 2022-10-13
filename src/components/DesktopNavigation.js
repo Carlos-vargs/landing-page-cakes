@@ -5,7 +5,6 @@ export default function DesktopNavigation({ navigation }) {
   return (
     <Flex
       as="nav"
-      display={["none", "none", "none", "flex", "flex"]}
       alignItems="center"
       justifyContent="center"
       fontFamily="heading"

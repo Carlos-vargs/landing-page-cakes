@@ -19,7 +19,7 @@ export default function MobileNavigation({ navigation, data }) {
   }
 
   return (
-    <Flex display={["flex", "flex", "flex", "none", "none"]}>
+    <>
       <MenuIcon onClick={handleClick} isOpen={isOpen} />
       <Stack
         visibility={isOpen ? "visible" : "hidden"}
@@ -89,6 +89,6 @@ export default function MobileNavigation({ navigation, data }) {
           {data.dev}
         </Flex>
       </Stack>
-    </Flex>
+    </>
   );
 }
