@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import bgImageSection9 from "../resources/images/bgImageIce9.jpg";
 import ContainerSocialNetworks from "./ContainerSocialNetwokrs";

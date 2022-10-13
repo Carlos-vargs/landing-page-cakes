@@ -1,5 +1,5 @@
 import { Box, Flex, Hide, Show } from "@chakra-ui/react";
-import React from "react";
+
 import Logo from "./Logo";
 import MobileNavigation from "./MobileNavigation";
 import CloudIcon from "../resources/icons/CloudIconWhite.svg";

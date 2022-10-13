@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import ArrowRightIcon from "../resources/icons/ArrowRightIcon";
 

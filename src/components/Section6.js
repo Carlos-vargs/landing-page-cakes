@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Heading, SimpleGrid, Stack } from "@chakra-ui/react";
 import bgImageSection6 from "../resources/images/bgImageIce6.jpg";
 import EventPricingCard from "./EventPricingCard";

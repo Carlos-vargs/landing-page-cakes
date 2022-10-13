@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import bgImageSection1 from "../resources/images/bgImageIce.jpg";
 

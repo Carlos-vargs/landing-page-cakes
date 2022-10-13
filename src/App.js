@@ -1,4 +1,3 @@
-import React from "react";
 import Layout from "./components/Layout";
 import { ChakraProvider } from "@chakra-ui/react";
 import Section1 from "./components/Section1";
