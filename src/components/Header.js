@@ -1,11 +1,11 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Flex, Hide, Show } from "@chakra-ui/react";
 import React from "react";
 import Logo from "./Logo";
-import NavigationMobile from "./NavigationMobile";
+import MobileNavigation from "./MobileNavigation";
 import CloudIcon from "../resources/icons/CloudIconWhite.svg";
-import Navigation from "./Navigation";
+import DesktopNavigation from "./DesktopNavigation";
 
-const nav = [
+const navigation = [
   { title: "home", url: "#home" },
   { title: "about", url: "#about" },
   { title: "gallery", url: "#gallery" },
@@ -29,8 +29,12 @@ export default function Header({ data }) {
       paddingInline={["20px", "20px", "30px", "46px", "46px"]}
     >
       <Logo width={"116px"} height={"66px"} />
-      <Navigation nav={nav} />
-      <NavigationMobile nav={nav} data={data} />
+      <Hide above="lg">
+        <MobileNavigation navigation={navigation} data={data} />
+      </Hide>
+      <Show above="lg">
+        <DesktopNavigation navigation={navigation} />
+      </Show>
       <Box
         as="figure"
         bgRepeat="repeat-x"

@@ -5,7 +5,7 @@ import MenuIcon from "../resources/icons/MenuIcon";
 import "../styles/navHeader.css";
 import "animate.css";
 
-export default function NavigationMobile({ nav, data }) {
+export default function MobileNavigation({ navigation, data }) {
   const [isOpen, setIsOpen] = useState(false);
   const [sizeTop, setSizeTop] = useState(90);
 
@@ -49,7 +49,7 @@ export default function NavigationMobile({ nav, data }) {
           textTransform="capitalize"
         >
           <UnorderedList listStyleType="none" marginInline="0">
-            {nav.map((element, key) => (
+            {navigation.map((element, key) => (
               <ListItem
                 key={key}
                 paddingInline="20px"
