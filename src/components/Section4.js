@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex } from "@chakra-ui/react";
 import bgImageSection4 from "../resources/images/bgImageIce4.jpg";
 import CardEvents from "./EventCard";

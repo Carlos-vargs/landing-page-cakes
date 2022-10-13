@@ -1,4 +1,3 @@
-import React from "react";
 import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import bgImageSection3 from "../resources/images/bgImageIce3.jpg";
 import PercentageCircle from "./PercentageCircle";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Stack, Text, Heading, Flex } from "@chakra-ui/react";
 
 export default function EventCard({ icon, count, title }) {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Flex, Link, ListItem, Stack, UnorderedList } from "@chakra-ui/react";
 import ContainerSocialNetworks from "./ContainerSocialNetwokrs";
 import MenuIcon from "../resources/icons/MenuIcon";

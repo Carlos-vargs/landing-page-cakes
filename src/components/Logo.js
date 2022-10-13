@@ -1,6 +1,6 @@
 import { Image } from "@chakra-ui/image";
 import { Box } from "@chakra-ui/react";
-import React from "react";
+
 import logoWithWhiteLetters from "../resources/images/newlogo2.png";
 import logoWithBlackLetters from "../resources/images/newlogo3.png";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "@chakra-ui/react";
 import socialNetworks from "../SocialNetworkData";
 
