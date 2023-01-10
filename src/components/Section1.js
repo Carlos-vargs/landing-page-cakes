@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Stack, Text, Heading } from "@chakra-ui/react";
 import bgImageSection1 from "../resources/images/bgImageIce.jpg";
-import { Button } from "@chakra-ui/react";
+import Button from "./ButtonBlob";
 
 export default function Section1() {
   return (
@@ -45,7 +45,7 @@ export default function Section1() {
           industry <br />
           with dummmy text. Graphics, Designing, Branding, Development
         </Text>
-        <Button variant="outline">Learn More</Button>
+        <Button>Learn More</Button>
       </Stack>
     </Flex>
   );

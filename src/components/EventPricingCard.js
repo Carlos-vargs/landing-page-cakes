@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Heading,
   ListItem,
@@ -8,6 +7,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import React from "react";
+import Button from "./ButtonBlob";
 
 export default function EventPricingCard({ cards, ...rest }) {
   return (
@@ -52,7 +52,7 @@ export default function EventPricingCard({ cards, ...rest }) {
         width="100px"
         marginInline="auto"
       >
-        <Button variant="outline" height="30px" textTransform="capitalize">
+        <Button height="44px" textTransform="capitalize">
           choose
         </Button>
       </Flex>
