@@ -1,7 +1,9 @@
 import React from "react";
 import { Stack, Text, Heading, Flex } from "@chakra-ui/react";
 
-export default function EventCard({ icon, count, title }) {
+export default function EventCard({ statistic }) {
+  const { icon, count, title } = statistic;
+
   return (
     <Stack
       justifyContent="center"
@@ -16,7 +18,7 @@ export default function EventCard({ icon, count, title }) {
       transition="all .5s ease"
       _hover={{
         backgroundColor: "white",
-        "&>div,h4,p": {
+        "&>div,h4,span": {
           color: "charlestonGreen.900",
         },
       }}
@@ -27,7 +29,7 @@ export default function EventCard({ icon, count, title }) {
       <Heading as="h4" fontSize="30px">
         {count}
       </Heading>
-      <Text>{title}</Text>
+      <Text as="span">{title}</Text>
     </Stack>
   );
 }
