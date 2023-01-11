@@ -10,6 +10,7 @@ export default function Section1() {
       backgroundImage={`url(${bgImageSection1})`}
       color="white"
       width="full"
+      className="smt"
       paddingBlock="120px"
       paddingInline={["16px", "16px", "16px", "116px", "116px"]}
       height="740px"
