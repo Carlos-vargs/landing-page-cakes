@@ -1,5 +1,7 @@
-import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import React from "react";
+import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import bgImageSection1 from "../resources/images/bgImageIce.jpg";
+import Button from "./ButtonBlob";
 
 export default function Section5() {
   return (
@@ -44,12 +46,26 @@ export default function Section5() {
           with dummmy text. Graphics, Designing, Branding, Development
         </Text>
         <Button
-          variant="outline"
           color="charlestonGreen.900"
-          borderColor="charlestonGreen.900"
           textTransform="uppercase"
+          blobColor="charlestonGreen.900"
+          width="auto"
+          _before={{
+            zIndex: 1,
+            left: 0,
+            top: 0,
+            border: "2px solid",
+            borderColor: "charlestonGreen.900",
+            position: "absolute",
+            content: `""`,
+            width: "full",
+            height: "full",
+            borderRadius: "3xl",
+          }}
           _hover={{
-            backgroundColor: "charlestonGreen.900",
+            color: "white",
+          }}
+          _focus={{
             color: "white",
           }}
         >

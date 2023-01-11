@@ -1,3 +1,5 @@
+import React from "react";
+import SplashFilterIcon from "../resources/icons/SplashFilterIcon";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -7,11 +9,10 @@ const data = {
 };
 
 export default function Layout({ children }) {
-  return (
-    <>
-      <Header data={data} />
-      {children}
-      <Footer data={data} />
-    </>
-  );
+  return <>
+    <Header data={data} />
+    {children}
+    <SplashFilterIcon />
+    <Footer data={data} />
+  </>;
 }

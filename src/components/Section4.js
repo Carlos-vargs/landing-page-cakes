@@ -63,9 +63,7 @@ export default function Section4() {
         {statistics.map((statistic, key) => (
           <CardEvents
             key={key}
-            title={statistic.title}
-            icon={statistic.icon}
-            count={statistic.count}
+            statistic={statistic}
           />
         ))}
       </Flex>

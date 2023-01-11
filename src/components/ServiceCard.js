@@ -1,20 +1,31 @@
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react";
 import ArrowRightIcon from "../resources/icons/ArrowRightIcon";
+import "../styles/ButtonBlob.css";
 
 export default function ServiceCard({ title, description, icon, ...rest }) {
   return (
     <Stack
       {...rest}
+      className="blob-btn"
       height="222px"
       width="236px"
-      border="solid 2px"
-      borderColor="candyPink.900"
-      borderRadius="3xl"
-      boxShadow="lg"
-      transition="all 0.3s ease"
+      zIndex="1"
+      position="relative"
+      _before={{
+        zIndex: 1,
+        left: 0,
+        top: 0,
+        border: "2px solid",
+        borderColor: "candyPink.900",
+        position: "absolute",
+        content: `""`,
+        width: "full",
+        height: "full",
+        borderRadius: "3xl",
+        boxShadow: "lg",
+      }}
       cursor="pointer"
       _hover={{
-        backgroundColor: "candyPink.900",
         "&>div": {
           backgroundColor: "white",
           color: "candyPink.900",
@@ -26,6 +37,35 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
       alignItems={["center", "center", "center", "flex-start", "flex-start"]}
       paddingInline="26px"
     >
+      <Box
+        as="span"
+        zIndex="-1"
+        overflow="hidden"
+        position="absolute"
+        left="0"
+        top="0"
+        transform="rotate(180deg)"
+        width="full"
+        height="full"
+        borderRadius="3xl"
+        background="transparent"
+      >
+        <Box
+          position="relative"
+          display="block"
+          height="full"
+          filter="url(#splash)"
+        >
+          {[1, 2, 3, 4].map((index) => (
+            <Box
+              as="span"
+              key={index}
+              className="blob-btn__blob"
+              backgroundColor="candyPink.900"
+            ></Box>
+          ))}
+        </Box>
+      </Box>
       <Flex
         transition="all 0.3s ease"
         borderRadius="full"

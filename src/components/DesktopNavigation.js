@@ -19,7 +19,11 @@ export default function DesktopNavigation({ navigation }) {
             _hover={{ color: "candyPink.900" }}
             marginInline="20px"
           >
-            <Link href={element.url} textDecoration="none !important">
+            <Link
+              href={element.url}
+              _focusVisible={{ color: "candyPink.900", boxShadow: "outline" }}
+              textDecoration="none !important"
+            >
               {element.title}
             </Link>
           </ListItem>
