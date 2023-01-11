@@ -1,6 +1,5 @@
 import { Center, Stack } from "@chakra-ui/react";
 import { CircularProgress, CircularProgressLabel } from "@chakra-ui/progress";
-import React from "react";
 
 export default function PercentageCircle({ title, percentage }) {
   return (
